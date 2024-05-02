@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("img").click(function(){
+                    $(this).attr("src","nuz.jpg");
+            });
+        });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#img1").mouseenter(function(){
+                    alert("SRIKAKULAM");
+                });
+                $("#img2").mouseenter(function(){
+                    alert("NUZVID");
+                });
+                $("#img3").mouseenter(function(){
+                    alert("RK VALLEY");
+                });
+                 $("#img4").mouseenter(function(){
+                    alert("ONGOLE");
+                });
+                $("#panel").click(function(){
+                    $("#slide").slideToggle(3000);
+                });
+            });
+        </script>
+        <style>
+            #panel, #slide {
+            padding: 5px;
+            text-align: center;
+            background-color: #91ebdf;
+            border: solid 1px #0fe2b4;
+            }
+            #slide {
+            padding: 50px;
+            display: none;
+            }</style>
+
+    </head>
+    <body>
+        
+        <h1 id="panel">RGUKT's</h1><br><br>
+        
+        <p><ul id="slide">
+            <li>SRIKAKULAM</li>
+            <li>NUZVID</li>
+            <li>RK VALLEY</li>
+            <li>ONGOLE</li>
+        </ul></p>
+        <img id="img1" src="sklm.jpeg" height="350" width="300">&nbsp;
+        <img id="img2" src="nuz.jpg" height="350" width="300">&nbsp;
+        <img id="img3" src="rk.jpeg" height="350" width="300">&nbsp;
+        <img id="img4" src="ong.webp" height="350" width="300">
+        <br>
+        <br>
+        
+        <img  src="sklm.jpeg" height="400" width="1000">
+        </body>
+</html>
